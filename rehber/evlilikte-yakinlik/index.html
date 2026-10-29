@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Defterim · Evlilikte Yakınlık</title>
+<meta name="description" content="Evlilikte Yakınlık: 7 Günlük Bağ Onarımı — telefonda doldurulabilen defter. Yazdıkların yalnızca senin cihazında kalır.">
+<meta name="robots" content="noindex"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<style>
+:root{--teal:#0F766E;--teal2:#115E58;--gold:#D4AF37;--cream:#F8F1E9;--card:#FFFDF8;--ink:#1F2937;--muted:#4B5563;--line:#E6DCC6}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+.wrap{max-width:640px;margin:0 auto;padding:20px 16px 120px}
+header{background:var(--teal2);color:#fff;border-radius:18px;padding:22px 20px;margin-bottom:18px}
+header small{color:var(--gold);letter-spacing:.14em;font-weight:600;font-size:12px}
+h1{font:700 26px/1.2 Georgia,'Times New Roman',serif;margin:6px 0 8px}
+h1 em{color:var(--gold);font-style:italic;font-weight:400}
+header p{margin:0;opacity:.9;font-size:14px}
+h2{font:700 21px/1.25 Georgia,'Times New Roman',serif;color:var(--teal2);margin:28px 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.day b{color:var(--gold);font-size:13px;letter-spacing:.08em}
+.day .t{font:700 17px Georgia,'Times New Roman',serif;margin:2px 0 4px}
+.day .q{font-weight:600;color:var(--teal2);font-size:15px;margin-bottom:8px}
+label{display:block;font-weight:600;font-size:14px;color:var(--teal2);margin:8px 0 4px}
+textarea,input{width:100%;font:16px/1.45 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;outline:none}
+textarea{min-height:84px;resize:vertical}
+textarea:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,118,110,.12)}
+.cols{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:560px){.cols{grid-template-columns:1fr 1fr}}
+.cols h3{margin:0 0 2px;font:700 17px Georgia,'Times New Roman',serif}
+.cols small{color:var(--muted)}
+.cols input{margin-top:6px}
+.note{font-size:13px;color:var(--muted)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:rgba(248,241,233,.96);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.bar button,.bar a{border:0;border-radius:999px;padding:10px 13px;font:600 13px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;cursor:pointer;text-decoration:none}
+.p{background:var(--teal);color:#fff}.s{background:#fff;color:var(--teal2);border:1px solid var(--line)!important}
+#st{font-size:12px;color:var(--teal);text-align:center;width:100%}
+footer{margin-top:28px;font-size:13px;color:var(--muted)}
+footer a{color:var(--teal);font-weight:600}
+@media print{.bar,header p,.noprint{display:none}body{background:#fff}textarea,input{border:none;border-bottom:1px dotted #999;border-radius:0;min-height:0}.card{break-inside:avoid}}
+</style></head><body><div class="wrap">
+<header><small>İRFAN CENTER · DEFTERİM</small><h1>Evlilikte Yakınlık: <em>7 Günlük Bağ Onarımı</em></h1>
+<p>Her gün PDF'teki pratiği yap, cevabını buraya yaz. Yazdıkların <b>yalnızca bu cihazda</b> saklanır; hiçbir yere gönderilmez.</p></header>
+<h2>7 günün cevapları</h2><div id="days"></div>
+<h2>Çalışma sayfası: Döngü haritası: ne oluyor, altında ne var?</h2><div class="card"><h3>Tartışma 1</h3><label>Tetikleyen olay</label><input data-k="tetik_1"><label>Benim tepkim</label><input data-k="tepkim_1"><label>Onun tepkisi</label><input data-k="onunki_1"><label>Altındaki ihtiyacım</label><input data-k="ihtiyac_1"></div><div class="card"><h3>Tartışma 2</h3><label>Tetikleyen olay</label><input data-k="tetik_2"><label>Benim tepkim</label><input data-k="tepkim_2"><label>Onun tepkisi</label><input data-k="onunki_2"><label>Altındaki ihtiyacım</label><input data-k="ihtiyac_2"></div><div class="card"><h3>Tartışma 3</h3><label>Tetikleyen olay</label><input data-k="tetik_3"><label>Benim tepkim</label><input data-k="tepkim_3"><label>Onun tepkisi</label><input data-k="onunki_3"><label>Altındaki ihtiyacım</label><input data-k="ihtiyac_3"></div><div class="card"><h3>Bir dahaki sefere söyleyeceğim cümle</h3><input data-k="tek_adim"></div>
+<h2>Haftanın özeti</h2><div class="card"><label>Bana en iyi gelen pratik</label><input data-k="ozet_1"><label>Değiştirmeye karar verdiğim kendi kalıbım</label><input data-k="ozet_2"><label>Haftalık «biz» konuşmamızın günü ve saati</label><input data-k="ozet_3"></div>
+<footer><p>Rehber (PDF) ve haftalık yazılar: <a href="https://t.me/irfan_center">t.me/irfan_center</a></p>
+<p class="noprint">Doğrudan iletişim: <a href="https://wa.me/994103174127?text=%5BSRC%3Ddefter_evlilik%5D%20Merhaba%2C%20defter%20sayfas%C4%B1ndan%20yaz%C4%B1yorum.">WhatsApp</a></p>
+<p><i>Genel bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez. Hayati bir tehlike varsa 112'yi ara.</i></p></footer></div>
+<div class="bar"><button class="p" id="save">💾 Kaydet</button><button class="s" id="copy">📋 Kopyala</button><button class="s" id="print">🖨️ PDF / Yazdır</button><div id="st"></div></div>
+<script>
+var CFG={"title": "Evlilikte Yakınlık", "key": "irfan_defter_evlilik_v1", "days": [["Döngüyü fark et", "Bizim tartışmalarımızda benim en sık düştüğüm kalıp hangisi?"], ["Yumuşak başlangıç", "Yumuşak başladığımda konuşma nasıl ilerledi?"], ["Çağrıya dön", "Bugün hangi çağrıyı fark ettim ve döndüğümde ne oldu?"], ["Mola protokolü", "Mola verdiğimde konuşmanın tonu nasıl değişti?"], ["Sınır cümlesi", "Hangi sınır ilişkimizi korumak için en gerekli?"], ["Takdir ve şükür", "Takdir ettiğimde aramızda ne değişti?"], ["Haftaya bak", "Bu hafta bizi en çok yakınlaştıran an hangisiydi?"]], "sections": [{"h": "Tartışma 1", "sub": "", "col": false, "fields": [{"k": "tetik_1", "label": "Tetikleyen olay", "multi": false}, {"k": "tepkim_1", "label": "Benim tepkim", "multi": false}, {"k": "onunki_1", "label": "Onun tepkisi", "multi": false}, {"k": "ihtiyac_1", "label": "Altındaki ihtiyacım", "multi": false}]}, {"h": "Tartışma 2", "sub": "", "col": false, "fields": [{"k": "tetik_2", "label": "Tetikleyen olay", "multi": false}, {"k": "tepkim_2", "label": "Benim tepkim", "multi": false}, {"k": "onunki_2", "label": "Onun tepkisi", "multi": false}, {"k": "ihtiyac_2", "label": "Altındaki ihtiyacım", "multi": false}]}, {"h": "Tartışma 3", "sub": "", "col": false, "fields": [{"k": "tetik_3", "label": "Tetikleyen olay", "multi": false}, {"k": "tepkim_3", "label": "Benim tepkim", "multi": false}, {"k": "onunki_3", "label": "Onun tepkisi", "multi": false}, {"k": "ihtiyac_3", "label": "Altındaki ihtiyacım", "multi": false}]}, {"h": "Bir dahaki sefere söyleyeceğim cümle", "sub": "", "col": false, "fields": [{"k": "tek_adim", "label": "", "multi": false}]}], "summary": [{"k": "ozet_1", "label": "Bana en iyi gelen pratik"}, {"k": "ozet_2", "label": "Değiştirmeye karar verdiğim kendi kalıbım"}, {"k": "ozet_3", "label": "Haftalık «biz» konuşmamızın günü ve saati"}], "ws": "Döngü haritası: ne oluyor, altında ne var?"};
+var d=document.getElementById('days');
+CFG.days.forEach(function(x,i){var c=document.createElement('div');c.className='card day';
+c.innerHTML='<b>GÜN '+(i+1)+'</b><div class="t"></div><div class="q"></div><textarea data-k="gun'+(i+1)+'" aria-label="Gün '+(i+1)+' cevabı" placeholder="Buraya yaz…"></textarea>';
+c.querySelector('.t').textContent=x[0];c.querySelector('.q').textContent=x[1];d.appendChild(c);});
+var fields=[].slice.call(document.querySelectorAll('[data-k]'));
+function st(m){var s=document.getElementById('st');s.textContent=m;setTimeout(function(){s.textContent='';},2500);}
+function load(){try{var v=JSON.parse(localStorage.getItem(CFG.key)||'{}');fields.forEach(function(f){if(v[f.dataset.k])f.value=v[f.dataset.k];});}catch(e){}}
+function save(silent){var v={};fields.forEach(function(f){if(f.value)v[f.dataset.k]=f.value;});try{localStorage.setItem(CFG.key,JSON.stringify(v));if(!silent)st('Kaydedildi ✓ (bu cihazda)');}catch(e){if(!silent)st('Bu tarayıcı kaydetmeye izin vermiyor — «Kopyala» ile sakla.');}}
+var t;fields.forEach(function(f){f.addEventListener('input',function(){clearTimeout(t);t=setTimeout(function(){save(true);},600);});});
+function val(k){var e=document.querySelector('[data-k="'+k+'"]');return e&&e.value?e.value:'—';}
+function asText(){var o=CFG.title+' — Defterim\n\n';CFG.days.forEach(function(x,i){o+='Gün '+(i+1)+' · '+x[1]+'\n'+val('gun'+(i+1))+'\n\n';});
+CFG.sections.forEach(function(s){o+=s.h+':\n';s.fields.forEach(function(f){var v=val(f.k);if(v!=='—'||!s.col)o+=(f.label?f.label+' ':'')+v+'\n';});o+='\n';});
+CFG.summary.forEach(function(s){o+=s.label+': '+val(s.k)+'\n';});return o;}
+document.getElementById('save').onclick=function(){save(false);};
+document.getElementById('copy').onclick=function(){var txt=asText();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){st('Kopyalandı ✓ Notlarına yapıştırabilirsin.');},function(){fallback(txt);});}else fallback(txt);};
+function fallback(txt){var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');st('Kopyalandı ✓');}catch(e){st('Kopyalanamadı');}document.body.removeChild(ta);}
+document.getElementById('print').onclick=function(){save(true);window.print();};
+load();
+</script></body></html>
